@@ -55,7 +55,7 @@ public class Alumno {
     }
 
     public void agregarMateria(Materia materia) {
-               if (materias.contains(materia)) {
+          if (materias.contains(materia)) {
             System.out.println("El alumno ya está inscripto en la materia: " + materia.getNombre());
         } else {
             materias.add(materia);

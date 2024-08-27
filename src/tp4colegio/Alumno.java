@@ -19,7 +19,7 @@ public class Alumno {
     private int legajo;
     private String apellido;
     private String nombre;
-    private Set<Materia> materias;
+    private HashSet<Materia> materias;
 
     //Constructor
     public Alumno(int legajo, String apellido, String nombre) {
@@ -55,10 +55,13 @@ public class Alumno {
     }
 
     public void agregarMateria(Materia materia) {
-        materias.add(materia);
-        //MEMO falta modificar para que controle que no se inscriba en dos materias iguales
+               if (materias.contains(materia)) {
+            System.out.println("El alumno ya está inscripto en la materia: " + materia.getNombre());
+        } else {
+            materias.add(materia);
+            System.out.println("Materia " + materia.getNombre() + " agregada.");
+        }
     }
-
     public int cantidadMaterias() {
         return materias.size();
     }

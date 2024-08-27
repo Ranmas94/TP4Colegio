@@ -70,6 +70,11 @@ public class menu extends javax.swing.JFrame {
         menu_inscripcion.setText("Administracion");
 
         menuItemInscripcion.setText("Inscripción");
+        menuItemInscripcion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemInscripcionActionPerformed(evt);
+            }
+        });
         menu_inscripcion.add(menuItemInscripcion);
 
         jMenuBar1.add(menu_inscripcion);
@@ -106,6 +111,14 @@ public class menu extends javax.swing.JFrame {
         escritorio.add(fm);
         fm.setVisible(true);
     }//GEN-LAST:event_menuItemMateriasActionPerformed
+
+    private void menuItemInscripcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemInscripcionActionPerformed
+         escritorio.removeAll();
+        escritorio.repaint();
+        InscripcionView iv = new InscripcionView();
+        escritorio.add(iv);
+        iv.setVisible(true);
+    }//GEN-LAST:event_menuItemInscripcionActionPerformed
 
     /**
      * @param args the command line arguments

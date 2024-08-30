@@ -3,7 +3,7 @@ La Materia tiene un idMateria, un nombre de la materia y año al que pertenece,
 tiene además un constructor que inicializa sus propiedades y métodos get y set para
 cada uno de sus atributos.
  */
-package tp4colegio;
+package clases;
 
 import java.util.Objects;
 
@@ -75,6 +75,11 @@ public class Materia {
 
     public void setAnio(int año) {
         this.año = año;
+    }
+
+    @Override
+    public String toString() {
+        return "" + nombre + ", " + año + "";
     }
 
 

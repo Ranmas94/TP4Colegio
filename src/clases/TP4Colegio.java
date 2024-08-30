@@ -17,7 +17,7 @@ una clase de nombre Colegio:
 
 5. Visualizar la cantidad de materias a las que está inscripto cada alumno.
  */
-package tp4colegio;
+package clases;
 
 /**
  *

@@ -6,7 +6,7 @@ inscribir un alumno en dos materias iguales.) y otro método cantidadMaterias qu
 cantidad de materias a las que está inscripto el alumno.
 
  */
-package tp4colegio;
+package clases;
 
 /**
  *
@@ -66,4 +66,34 @@ public class Alumno {
         return materias.size();
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 97 * hash + this.legajo;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Alumno other = (Alumno) obj;
+        return this.legajo == other.legajo;
+    }
+
+    
+    
+    @Override
+    public String toString() {
+        return " " + apellido + ", " + nombre + " ";
+    }
+
+    
 }

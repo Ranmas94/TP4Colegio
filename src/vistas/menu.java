@@ -2,14 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package tp4colegio;
+package vistas;
+
+import clases.Alumno;
+import clases.Materia;
+import java.util.HashSet;
 
 /**
  *
  * @author Lourdes
  */
 public class menu extends javax.swing.JFrame {
-
+public static HashSet<Alumno> registro = new HashSet<>();
+public static HashSet<Materia> materia = new HashSet<>();
     /**
      * Creates new form menu
      */

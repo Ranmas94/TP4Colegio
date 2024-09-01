@@ -35,9 +35,11 @@ public static HashSet<Materia> materia = new HashSet<>();
         jMenuBar1 = new javax.swing.JMenuBar();
         menu_formulario = new javax.swing.JMenu();
         menuItemAlumnos = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
         menuItemMaterias = new javax.swing.JMenuItem();
         menu_inscripcion = new javax.swing.JMenu();
         menuItemInscripcion = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,16 +47,16 @@ public static HashSet<Materia> materia = new HashSet<>();
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 360, Short.MAX_VALUE)
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 279, Short.MAX_VALUE)
         );
 
-        menu_formulario.setText("Formularios");
+        menu_formulario.setText("Alumno");
 
-        menuItemAlumnos.setText("de alumnos...");
+        menuItemAlumnos.setText("Agregar Alumno");
         menuItemAlumnos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuItemAlumnosActionPerformed(evt);
@@ -62,17 +64,21 @@ public static HashSet<Materia> materia = new HashSet<>();
         });
         menu_formulario.add(menuItemAlumnos);
 
-        menuItemMaterias.setText("de materias...");
+        jMenuBar1.add(menu_formulario);
+
+        jMenu1.setText("Materia");
+
+        menuItemMaterias.setText("Agregar materias...");
         menuItemMaterias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuItemMateriasActionPerformed(evt);
             }
         });
-        menu_formulario.add(menuItemMaterias);
+        jMenu1.add(menuItemMaterias);
 
-        jMenuBar1.add(menu_formulario);
+        jMenuBar1.add(jMenu1);
 
-        menu_inscripcion.setText("Administracion");
+        menu_inscripcion.setText("Registro");
 
         menuItemInscripcion.setText("Inscripción");
         menuItemInscripcion.addActionListener(new java.awt.event.ActionListener() {
@@ -84,13 +90,16 @@ public static HashSet<Materia> materia = new HashSet<>();
 
         jMenuBar1.add(menu_inscripcion);
 
+        jMenu2.setText("Salir");
+        jMenuBar1.add(jMenu2);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio)
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -162,6 +171,8 @@ public static HashSet<Materia> materia = new HashSet<>();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane escritorio;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem menuItemAlumnos;
     private javax.swing.JMenuItem menuItemInscripcion;

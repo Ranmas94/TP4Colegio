@@ -6,20 +6,27 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="menu_formulario">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Formularios"/>
+            <Property name="text" type="java.lang.String" value="Alumno"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="menuItemAlumnos">
               <Properties>
-                <Property name="text" type="java.lang.String" value="de alumnos..."/>
+                <Property name="text" type="java.lang.String" value="Agregar Alumno"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemAlumnosActionPerformed"/>
               </Events>
             </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Materia"/>
+          </Properties>
+          <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="menuItemMaterias">
               <Properties>
-                <Property name="text" type="java.lang.String" value="de materias..."/>
+                <Property name="text" type="java.lang.String" value="Agregar materias..."/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemMateriasActionPerformed"/>
@@ -29,7 +36,7 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="menu_inscripcion">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Administracion"/>
+            <Property name="text" type="java.lang.String" value="Registro"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="menuItemInscripcion">
@@ -41,6 +48,11 @@
               </Events>
             </MenuItem>
           </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Salir"/>
+          </Properties>
         </Menu>
       </SubComponents>
     </Menu>
@@ -68,7 +80,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="escritorio" alignment="0" max="32767" attributes="0"/>
+          <Component id="escritorio" alignment="0" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -83,7 +95,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="360" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">

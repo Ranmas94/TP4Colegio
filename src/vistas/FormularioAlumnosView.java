@@ -111,7 +111,7 @@ public class FormularioAlumnosView extends javax.swing.JInternalFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/13223142_5191466.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -34, 370, 280));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -34, 430, 280));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -131,6 +131,10 @@ public class FormularioAlumnosView extends javax.swing.JInternalFrame {
 
     private void jbGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGuardarActionPerformed
         try {
+            if(tfLegajo.getText().isEmpty() || tfApellido.getText().isEmpty() ||tfNombre.getText().isEmpty()){
+                JOptionPane.showMessageDialog(this, "Usted debe llenar todas las casillas.");
+            return;
+            }
         int legajo = Integer.parseInt(tfLegajo.getText());
         String apellido = tfApellido.getText();
         String nombre = tfNombre.getText();

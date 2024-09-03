@@ -109,7 +109,7 @@ public class FormularioMateriasView extends javax.swing.JInternalFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/13223142_5191466.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -24, 390, 290));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -24, 430, 280));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -117,6 +117,10 @@ public class FormularioMateriasView extends javax.swing.JInternalFrame {
     private void jbGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGuardarActionPerformed
         try{
         int codigo = Integer.parseInt(tfCodigo.getText());
+        if(tfNombreMateria.getText().isEmpty() || tfAnio.getText().isEmpty() || tfCodigo.getText().isEmpty()){
+            JOptionPane.showMessageDialog(this, "Usted debe llenar todas las casillas.");
+            return;
+        }
         String nombre = tfNombreMateria.getText();
         int anio = Integer.parseInt(tfAnio.getText());
         

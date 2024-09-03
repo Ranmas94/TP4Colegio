@@ -56,13 +56,15 @@ public class Alumno {
         this.nombre = nombre;
     }
      //Metodo agregarMateria
-    public void agregarMateria(Materia materia) {
+    public boolean agregarMateria(Materia materia) {
+        boolean aux;
           if (materias.contains(materia)) {
-            System.out.println("El alumno ya está inscripto en la materia: " + materia.getNombre());
+            aux=false;
         } else {
             materias.add(materia);
-            System.out.println("Materia " + materia.getNombre() + " agregada.");
+            aux=true;
         }
+          return aux;
     }
      //Metodo cantidadMaterias
     public int cantidadMaterias() {

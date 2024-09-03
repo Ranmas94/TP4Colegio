@@ -123,15 +123,15 @@ public class InscripcionView extends javax.swing.JInternalFrame {
        while(it.hasNext()){
            Alumno alActual = it.next();
            if(alActual.equals(al)){
-               al.agregarMateria(mat);
-               ins=true;
+               ins = al.agregarMateria(mat);
+               
                break;
            }
        }
        if (ins){
-            JOptionPane.showMessageDialog(this,"Alumno Inscripto en " + mat.getNombre() + ".");      
+            JOptionPane.showMessageDialog(this,"Alumno Inscripto en " + mat.getNombre() + " .");      
        }else{
-           JOptionPane.showMessageDialog(this, "Hubo un error con la inscripción.");
+           JOptionPane.showMessageDialog(this, "El alumno ya se encuentra inscripto.");
        }
     }//GEN-LAST:event_jbInscribirActionPerformed
 

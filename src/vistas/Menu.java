@@ -42,16 +42,18 @@ public static HashSet<Materia> materia = new HashSet<>();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setFocusable(false);
+        setResizable(false);
 
         javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 360, Short.MAX_VALUE)
+            .addGap(0, 456, Short.MAX_VALUE)
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGap(0, 293, Short.MAX_VALUE)
         );
 
         menu_formulario.setText("Alumno");
@@ -99,7 +101,7 @@ public static HashSet<Materia> materia = new HashSet<>();
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(escritorio)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -114,24 +116,28 @@ public static HashSet<Materia> materia = new HashSet<>();
         escritorio.removeAll();
         escritorio.repaint();
         FormularioAlumnosView fa = new FormularioAlumnosView();
-        escritorio.add(fa);
         fa.setVisible(true);
+        escritorio.add(fa);
+        escritorio.moveToFront(fa);
+        
     }//GEN-LAST:event_menuItemAlumnosActionPerformed
 
     private void menuItemMateriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemMateriasActionPerformed
         escritorio.removeAll();
         escritorio.repaint();
         FormularioMateriasView fm = new  FormularioMateriasView();
+         fm.setVisible(true);
         escritorio.add(fm);
-        fm.setVisible(true);
+        escritorio.moveToFront(fm);
     }//GEN-LAST:event_menuItemMateriasActionPerformed
 
     private void menuItemInscripcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemInscripcionActionPerformed
          escritorio.removeAll();
         escritorio.repaint();
         InscripcionView iv = new InscripcionView();
-        escritorio.add(iv);
         iv.setVisible(true);
+        escritorio.add(iv);
+        escritorio.moveToFront(iv);
     }//GEN-LAST:event_menuItemInscripcionActionPerformed
 
     /**

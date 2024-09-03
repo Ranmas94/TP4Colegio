@@ -6,7 +6,7 @@ package vistas;
 
 import clases.Alumno;
 import javax.swing.JOptionPane;
-import static vistas.Menu.registro;
+import static vistas.menu.registro;
 
 /**
  *

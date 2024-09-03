@@ -6,7 +6,7 @@ package vistas;
 
 import clases.Materia;
 import javax.swing.JOptionPane;
-import static vistas.Menu.materia;
+import static vistas.menu.materia;
 
 /**
  *

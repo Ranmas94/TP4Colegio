@@ -12,13 +12,13 @@ import java.util.HashSet;
  *
  * @author Lourdes
  */
-public class Menu extends javax.swing.JFrame {
-public static HashSet<Alumno> registro = new HashSet<>();//Vista Alumnos
-public static HashSet<Materia> materia = new HashSet<>();//Vista Materias
+public class menu extends javax.swing.JFrame {
+public static HashSet<Alumno> registro = new HashSet<>();
+public static HashSet<Materia> materia = new HashSet<>();
     /**
      * Creates new form menu
      */
-    public Menu() {
+    public menu() {
         initComponents();
     }
 
@@ -68,7 +68,7 @@ public static HashSet<Materia> materia = new HashSet<>();//Vista Materias
 
         jMenu1.setText("Materia");
 
-        menuItemMaterias.setText("Agregar Materia");
+        menuItemMaterias.setText("Agregar materias...");
         menuItemMaterias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuItemMateriasActionPerformed(evt);
@@ -111,11 +111,11 @@ public static HashSet<Materia> materia = new HashSet<>();//Vista Materias
     }// </editor-fold>//GEN-END:initComponents
 
     private void menuItemAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemAlumnosActionPerformed
-        escritorio.removeAll();//Limpia la ventana
-        escritorio.repaint();//Redibuja una nueva ventana
-        FormularioAlumnosView fa = new FormularioAlumnosView();//El NEW de la nueva ventana (cada formulario va a tener un nuevo nombre) y es la forma de pasar nuestro HashSet.
-        escritorio.add(fa);//Agrego al Escritorio esa ventana que acabamos de crear (fa)
-        fa.setVisible(true);//Lo pongo en visible
+        escritorio.removeAll();
+        escritorio.repaint();
+        FormularioAlumnosView fa = new FormularioAlumnosView();
+        escritorio.add(fa);
+        fa.setVisible(true);
     }//GEN-LAST:event_menuItemAlumnosActionPerformed
 
     private void menuItemMateriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemMateriasActionPerformed
@@ -151,21 +151,20 @@ public static HashSet<Materia> materia = new HashSet<>();//Vista Materias
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu().setVisible(true);
+                new menu().setVisible(true);
             }
         });
     }

@@ -8,8 +8,8 @@ import clases.Alumno;
 import clases.Materia;
 import java.util.Iterator;
 import javax.swing.JOptionPane;
-import static vistas.Menu.materia;
-import static vistas.Menu.registro;
+import static vistas.menu.materia;
+import static vistas.menu.registro;
 
 /**
  *

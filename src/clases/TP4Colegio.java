@@ -42,17 +42,18 @@ public class TP4Colegio {
         lopez.agregarMateria(inglesI);
         lopez.agregarMateria(matematicas);
         lopez.agregarMateria(laboratorio1);
-
-        // 4.
+        System.out.println("--------------------"); 
+        // 4.Inscribir a Martínez en las 3 materias y volver a inscribirlo en Laboratorio 1.
         martinez.agregarMateria(inglesI);
         martinez.agregarMateria(matematicas);
         martinez.agregarMateria(laboratorio1);
         martinez.agregarMateria(laboratorio1);  
+        System.out.println("--------------------");
         // MEMO modificar metodo agregarmaterias en alumno para evitar que se
         // se anote masd e una vez a la misma mateia
 
         // 5. Visualizar la cantidad de materias a las que está inscripto cada alumno.
-        System.out.println("El alumno " + lopez.getApellido() + " " + lopez.getNombre() + " está inscripto en " + lopez.cantidadMaterias() + " materias.");
-        System.out.println("El alumno " + martinez.getApellido() + " " + martinez.getNombre() + " está inscripto en " + martinez.cantidadMaterias() + " materias.");
+        System.out.println("El/la alumno/a " + lopez.getApellido() + " " + lopez.getNombre() + " se encuentra inscripto en " + lopez.cantidadMaterias() + " materias.");
+        System.out.println("El/la alumno/a " + martinez.getApellido() + " " + martinez.getNombre() + " se encuentra inscripto en " + martinez.cantidadMaterias() + " materias.");
     }
 }

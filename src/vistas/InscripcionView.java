@@ -8,8 +8,8 @@ import clases.Alumno;
 import clases.Materia;
 import java.util.Iterator;
 import javax.swing.JOptionPane;
-import static vistas.menu.materia;
-import static vistas.menu.registro;
+import static vistas.Menu.materia;
+import static vistas.Menu.registro;
 
 /**
  *
@@ -24,6 +24,7 @@ public class InscripcionView extends javax.swing.JInternalFrame {
         initComponents();
         cargarComboMateria();
         cargarComboAlumno();
+       
     }
 
     /**
@@ -38,16 +39,22 @@ public class InscripcionView extends javax.swing.JInternalFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jcbMateria = new javax.swing.JComboBox<>();
         jcbAlumno = new javax.swing.JComboBox<>();
         jbInscribir = new javax.swing.JButton();
         jbSalir = new javax.swing.JButton();
+        jcbMateria = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
 
-        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 255));
         jLabel1.setText("FORMULARIO DE INSCRIPCIÓN");
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 153, 255));
         jLabel2.setText("ELIJA UNA MATERIA:");
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 153, 255));
         jLabel3.setText("ELIJA UN ALUMNO:");
 
         jbInscribir.setText("Inscribir");
@@ -64,48 +71,60 @@ public class InscripcionView extends javax.swing.JInternalFrame {
             }
         });
 
+        jButton1.setText("Ver Inscripciones");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addGap(46, 46, 46)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jcbMateria, 0, 143, Short.MAX_VALUE)
-                    .addComponent(jcbAlumno, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(70, Short.MAX_VALUE)
+                    .addComponent(jLabel3)
+                    .addComponent(jButton1))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jbInscribir)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jbSalir)
+                        .addGap(12, 12, 12))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jcbAlumno, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jcbMateria, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(31, 31, 31))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(52, 52, 52))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jbInscribir)
-                .addGap(18, 18, 18)
-                .addComponent(jbSalir)
-                .addGap(14, 14, 14))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(55, 55, 55)
+                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jcbMateria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
+                .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jcbAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addGap(51, 51, 51)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbInscribir)
-                    .addComponent(jbSalir))
-                .addContainerGap())
+                    .addComponent(jbSalir)
+                    .addComponent(jButton1))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         pack();
@@ -117,9 +136,11 @@ public class InscripcionView extends javax.swing.JInternalFrame {
 
     private void jbInscribirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbInscribirActionPerformed
        boolean ins = false;
-        Alumno al = (Alumno)jcbAlumno.getSelectedItem();
+       Alumno al = (Alumno)jcbAlumno.getSelectedItem();
        Materia mat = (Materia)jcbMateria.getSelectedItem();
+       
        Iterator<Alumno> it = registro.iterator();
+       
        while(it.hasNext()){
            Alumno alActual = it.next();
            if(alActual.equals(al)){
@@ -128,16 +149,23 @@ public class InscripcionView extends javax.swing.JInternalFrame {
                break;
            }
        }
-       if(ins){
-           JOptionPane.showMessageDialog(this, "El alumno se ha inscrito con éxito");
+       if (ins){
+            JOptionPane.showMessageDialog(this,"Alumno Inscripto en " + mat.getNombre() + ".");      
        }else{
            JOptionPane.showMessageDialog(this, "Hubo un error con la inscripción.");
        }
-       mostrar(); //Es para verificar si realmene los alumnos se inscriben y sin repetir las materias
     }//GEN-LAST:event_jbInscribirActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        for (Alumno al : registro) {
+        JOptionPane.showMessageDialog(this,">>"+al.getNombre()+ al.getApellido() + " se encuentra inscripto en "+al.cantidadMaterias() + " materias.");
+    
+    }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -156,11 +184,5 @@ private void cargarComboAlumno(){
         jcbAlumno.addItem(al);
     }
     
-}
-private void mostrar(){
-    for (Alumno al : registro) {
-        System.out.println(al.getNombre()+" - "+al.cantidadMaterias());
-    
-    }
 }
 }

@@ -13,37 +13,11 @@ import java.util.Objects;
  */
 
 public class Materia {
+    //Atributos
     private int idMateria;
     private String nombre;
     private int año;
-//equal hashcode
 
-    @Override
-    public int hashCode() {
-        int hash = 7;
-        hash = 23 * hash + this.idMateria;
-        hash = 23 * hash + Objects.hashCode(this.nombre);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Materia other = (Materia) obj;
-        if (this.idMateria != other.idMateria) {
-            return false;
-        }
-        return Objects.equals(this.nombre, other.nombre);
-    }
-    
     
     //Constuctor
     public Materia(int idMateria, String nombre, int año) {
@@ -76,11 +50,38 @@ public class Materia {
     public void setAnio(int año) {
         this.año = año;
     }
-
+ //Metodo toString
     @Override
     public String toString() {
         return "" + nombre + ", " + año + "";
     }
+//Metodo equal y hashcode
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 23 * hash + this.idMateria;
+        hash = 23 * hash + Objects.hashCode(this.nombre);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Materia other = (Materia) obj;
+        if (this.idMateria != other.idMateria) {
+            return false;
+        }
+        return Objects.equals(this.nombre, other.nombre);
+    }
+    
 
 }

@@ -15,7 +15,9 @@ package clases;
 import java.util.HashSet;
 import java.util.Set;
 
+
 public class Alumno {
+    //Atributos
     private int legajo;
     private String apellido;
     private String nombre;
@@ -53,7 +55,7 @@ public class Alumno {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+     //Metodo agregarMateria
     public void agregarMateria(Materia materia) {
           if (materias.contains(materia)) {
             System.out.println("El alumno ya está inscripto en la materia: " + materia.getNombre());
@@ -62,10 +64,11 @@ public class Alumno {
             System.out.println("Materia " + materia.getNombre() + " agregada.");
         }
     }
+     //Metodo cantidadMaterias
     public int cantidadMaterias() {
         return materias.size();
     }
-
+//Metodos hashCode y equals
     @Override
     public int hashCode() {
         int hash = 7;
@@ -88,12 +91,12 @@ public class Alumno {
         return this.legajo == other.legajo;
     }
 
-    
+     //Metodo toString
     
     @Override
     public String toString() {
         return " " + apellido + ", " + nombre + " ";
     }
 
-    
+ 
 }

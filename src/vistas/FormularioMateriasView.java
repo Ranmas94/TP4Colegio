@@ -53,29 +53,29 @@ public class FormularioMateriasView extends javax.swing.JInternalFrame {
         jLabel2.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("CÓDIGO DE MATERIA:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 66, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
 
         tfCodigo.setBackground(new java.awt.Color(255, 255, 255));
         tfCodigo.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(tfCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 64, 69, -1));
+        getContentPane().add(tfCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 69, -1));
 
         jLabel3.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("NOMBRE DE LA MATERIA:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 106, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, -1));
 
         tfNombreMateria.setBackground(new java.awt.Color(255, 255, 255));
         tfNombreMateria.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(tfNombreMateria, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 104, 133, -1));
+        getContentPane().add(tfNombreMateria, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, 133, -1));
 
         jLabel4.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("AÑO DE LA MATERIA:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 150, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
 
         tfAnio.setBackground(new java.awt.Color(255, 255, 255));
         tfAnio.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(tfAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 148, 133, -1));
+        getContentPane().add(tfAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 133, -1));
 
         jbGuardar.setBackground(new java.awt.Color(255, 255, 255));
         jbGuardar.setForeground(new java.awt.Color(0, 0, 0));
@@ -85,7 +85,7 @@ public class FormularioMateriasView extends javax.swing.JInternalFrame {
                 jbGuardarActionPerformed(evt);
             }
         });
-        getContentPane().add(jbGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, -1, -1));
+        getContentPane().add(jbGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, -1, -1));
 
         jbNuevo.setBackground(new java.awt.Color(255, 255, 255));
         jbNuevo.setForeground(new java.awt.Color(0, 0, 0));
@@ -95,7 +95,7 @@ public class FormularioMateriasView extends javax.swing.JInternalFrame {
                 jbNuevoActionPerformed(evt);
             }
         });
-        getContentPane().add(jbNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, -1, -1));
+        getContentPane().add(jbNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, -1, -1));
 
         jbSalir.setBackground(new java.awt.Color(255, 255, 255));
         jbSalir.setForeground(new java.awt.Color(0, 0, 0));
@@ -105,7 +105,7 @@ public class FormularioMateriasView extends javax.swing.JInternalFrame {
                 jbSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(jbSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, -1, -1));
+        getContentPane().add(jbSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/13223142_5191466.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");

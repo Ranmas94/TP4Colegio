@@ -42,15 +42,15 @@ public class InscriptosView extends javax.swing.JInternalFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel5.setText("Materias inscriptas: ");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, -1, -1));
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel5.setText("MATERIAS INSCRIPTAS:");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, 20));
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel1.setText("Seleccione un alumno:");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel1.setText("SELECCIONE UN ALUMNO:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
 
-        jPanel1.add(jcbMaterias, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 198, -1));
+        jPanel1.add(jcbMaterias, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, 190, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -62,7 +62,7 @@ public class InscriptosView extends javax.swing.JInternalFrame {
                 jbListadoItemStateChanged(evt);
             }
         });
-        jPanel1.add(jbListado, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 198, -1));
+        jPanel1.add(jbListado, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 80, 190, -1));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setForeground(new java.awt.Color(0, 0, 0));

@@ -43,16 +43,19 @@ public class InscriptosView extends javax.swing.JInternalFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("MATERIAS INSCRIPTAS:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, 20));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 20));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("SELECCIONE UN ALUMNO:");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
 
-        jPanel1.add(jcbMaterias, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, 190, -1));
+        jPanel1.add(jcbMaterias, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 190, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("REGISTRO DE ALUMNOS");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 430, -1));
@@ -62,10 +65,9 @@ public class InscriptosView extends javax.swing.JInternalFrame {
                 jbListadoItemStateChanged(evt);
             }
         });
-        jPanel1.add(jbListado, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 80, 190, -1));
+        jPanel1.add(jbListado, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 190, -1));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Salir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

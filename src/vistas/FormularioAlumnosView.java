@@ -50,64 +50,52 @@ public class FormularioAlumnosView extends javax.swing.JInternalFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("FORMULARIO DE ALUMNOS");
         jLabel1.setAlignmentY(0.0F);
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 370, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 370, -1));
 
         jLabel2.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("LEGAJO:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, -1, 30));
-
-        tfLegajo.setBackground(new java.awt.Color(255, 255, 255));
-        tfLegajo.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(tfLegajo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 99, -1));
 
         jLabel4.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("APELLIDO:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, -1));
-
-        tfApellido.setBackground(new java.awt.Color(255, 255, 255));
-        tfApellido.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(tfApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 180, -1));
 
         jLabel3.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("NOMBRE:");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, -1, 30));
-
-        tfNombre.setBackground(new java.awt.Color(255, 255, 255));
-        tfNombre.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(tfNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 180, -1));
 
         jbGuardar.setBackground(new java.awt.Color(255, 255, 255));
-        jbGuardar.setForeground(new java.awt.Color(0, 0, 0));
         jbGuardar.setText("Guardar");
         jbGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbGuardarActionPerformed(evt);
             }
         });
-        jPanel1.add(jbGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 192, -1, -1));
+        jPanel1.add(jbGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, -1, -1));
 
         jbNuevo.setBackground(new java.awt.Color(255, 255, 255));
-        jbNuevo.setForeground(new java.awt.Color(0, 0, 0));
         jbNuevo.setText("Nuevo");
         jbNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbNuevoActionPerformed(evt);
             }
         });
-        jPanel1.add(jbNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 192, -1, -1));
+        jPanel1.add(jbNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, -1, -1));
 
         jbSalir.setBackground(new java.awt.Color(255, 255, 255));
-        jbSalir.setForeground(new java.awt.Color(0, 0, 0));
         jbSalir.setText("Salir");
         jbSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbSalirActionPerformed(evt);
             }
         });
-        jPanel1.add(jbSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 192, -1, -1));
+        jPanel1.add(jbSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/13223142_5191466.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");

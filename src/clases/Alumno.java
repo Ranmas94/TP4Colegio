@@ -13,6 +13,7 @@ package clases;
  * @author Ranma
  */
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 
@@ -70,6 +71,11 @@ public class Alumno {
     public int cantidadMaterias() {
         return materias.size();
     }
+
+    public HashSet<Materia> getMaterias() {
+        return materias;
+    }
+    
 //Metodos hashCode y equals
     @Override
     public int hashCode() {

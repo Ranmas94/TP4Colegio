@@ -39,7 +39,9 @@ public static HashSet<Materia> materia = new HashSet<>();
         menuItemMaterias = new javax.swing.JMenuItem();
         menu_inscripcion = new javax.swing.JMenu();
         menuItemInscripcion = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem_inscriptos = new javax.swing.JMenuItem();
+        jMenuItem_Salir = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFocusable(false);
@@ -49,7 +51,7 @@ public static HashSet<Materia> materia = new HashSet<>();
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 456, Short.MAX_VALUE)
+            .addGap(0, 440, Short.MAX_VALUE)
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,8 +94,25 @@ public static HashSet<Materia> materia = new HashSet<>();
 
         jMenuBar1.add(menu_inscripcion);
 
-        jMenu2.setText("Salir");
-        jMenuBar1.add(jMenu2);
+        jMenu3.setText("Otro");
+
+        jMenuItem_inscriptos.setText("Inscriptos...");
+        jMenuItem_inscriptos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_inscriptosActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem_inscriptos);
+
+        jMenuItem_Salir.setText("Salir");
+        jMenuItem_Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_SalirActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem_Salir);
+
+        jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
 
@@ -140,6 +159,21 @@ public static HashSet<Materia> materia = new HashSet<>();
         escritorio.moveToFront(iv);
     }//GEN-LAST:event_menuItemInscripcionActionPerformed
 
+    private void jMenuItem_inscriptosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_inscriptosActionPerformed
+        // TODO add your handling code here:
+        escritorio.removeAll();
+        escritorio.repaint();
+        InscriptosView iv = new InscriptosView();
+        iv.setVisible(true);
+        escritorio.add(iv);
+        escritorio.moveToFront(iv);
+    }//GEN-LAST:event_jMenuItem_inscriptosActionPerformed
+
+    private void jMenuItem_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_SalirActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jMenuItem_SalirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -178,8 +212,10 @@ public static HashSet<Materia> materia = new HashSet<>();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane escritorio;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem_Salir;
+    private javax.swing.JMenuItem jMenuItem_inscriptos;
     private javax.swing.JMenuItem menuItemAlumnos;
     private javax.swing.JMenuItem menuItemInscripcion;
     private javax.swing.JMenuItem menuItemMaterias;

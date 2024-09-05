@@ -55,29 +55,29 @@ public class FormularioAlumnosView extends javax.swing.JInternalFrame {
         jLabel2.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("LEGAJO:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, 30));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, -1, 30));
 
         tfLegajo.setBackground(new java.awt.Color(255, 255, 255));
         tfLegajo.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(tfLegajo, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 60, 99, -1));
+        jPanel1.add(tfLegajo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 99, -1));
 
         jLabel4.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("APELLIDO:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, -1));
 
         tfApellido.setBackground(new java.awt.Color(255, 255, 255));
         tfApellido.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(tfApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 106, 180, -1));
+        jPanel1.add(tfApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 180, -1));
 
         jLabel3.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("NOMBRE:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 148, -1, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, -1, 30));
 
         tfNombre.setBackground(new java.awt.Color(255, 255, 255));
         tfNombre.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(tfNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 152, 180, -1));
+        jPanel1.add(tfNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 180, -1));
 
         jbGuardar.setBackground(new java.awt.Color(255, 255, 255));
         jbGuardar.setForeground(new java.awt.Color(0, 0, 0));
@@ -111,18 +111,18 @@ public class FormularioAlumnosView extends javax.swing.JInternalFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/13223142_5191466.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -34, 430, 280));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -34, 430, 300));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(3, 3, 3)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 

@@ -43,7 +43,6 @@ public class InscripcionView extends javax.swing.JInternalFrame {
         jbInscribir = new javax.swing.JButton();
         jbSalir = new javax.swing.JButton();
         jcbMateria = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -92,19 +91,9 @@ public class InscripcionView extends javax.swing.JInternalFrame {
         jcbMateria.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jcbMateria, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 59, 195, -1));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Ver Inscripciones");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 185, -1, -1));
-
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/13223142_5191466.jpg"))); // NOI18N
         jLabel4.setText("jLabel4");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -24, 430, 280));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -24, 430, 290));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -129,22 +118,14 @@ public class InscripcionView extends javax.swing.JInternalFrame {
            }
        }
        if (ins){
-            JOptionPane.showMessageDialog(this,"Alumno Inscripto en " + mat.getNombre() + " .");      
+            JOptionPane.showMessageDialog(this,"Alumno inscripto en " + mat.getNombre() + " .");      
        }else{
            JOptionPane.showMessageDialog(this, "El alumno ya se encuentra inscripto.");
        }
     }//GEN-LAST:event_jbInscribirActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        for (Alumno al : registro) {
-        JOptionPane.showMessageDialog(this,">>"+al.getNombre()+ al.getApellido() + " se encuentra inscripto en "+al.cantidadMaterias() + " materias.");
-    
-    }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

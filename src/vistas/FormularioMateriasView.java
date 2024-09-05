@@ -109,7 +109,7 @@ public class FormularioMateriasView extends javax.swing.JInternalFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/13223142_5191466.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -24, 430, 280));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -24, 430, 290));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -140,7 +140,8 @@ public class FormularioMateriasView extends javax.swing.JInternalFrame {
         JOptionPane.showMessageDialog(this, "Materia existente.");
         }
         } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this, "El código y el año deben ser números enteros.");
+        JOptionPane.showMessageDialog(this, "El codigo debe ser un entero.");
+        JOptionPane.showMessageDialog(this, "El año debe ser un entero.");
         } catch (NullPointerException e) {
         JOptionPane.showMessageDialog(this, "Error al guardar la materia.");
     }

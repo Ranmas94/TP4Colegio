@@ -32,6 +32,13 @@ public static HashSet<Materia> materia = new HashSet<>();
     private void initComponents() {
 
         escritorio = new javax.swing.JDesktopPane();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         menu_formulario = new javax.swing.JMenu();
         menuItemAlumnos = new javax.swing.JMenuItem();
@@ -47,16 +54,45 @@ public static HashSet<Materia> materia = new HashSet<>();
         setFocusable(false);
         setResizable(false);
 
-        javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
-        escritorio.setLayout(escritorioLayout);
-        escritorioLayout.setHorizontalGroup(
-            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 440, Short.MAX_VALUE)
-        );
-        escritorioLayout.setVerticalGroup(
-            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 293, Short.MAX_VALUE)
-        );
+        escritorio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arrows.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        escritorio.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 10, 300, 450));
+
+        jLabel3.setFont(new java.awt.Font("Messina Sans", 3, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Universidad de La Punta");
+        escritorio.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 220, -1));
+
+        jLabel4.setFont(new java.awt.Font("Messina Sans", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 102, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("(Selecciona una opción del menú)");
+        escritorio.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 440, -1));
+
+        jLabel5.setFont(new java.awt.Font("Messina Sans", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("¡Bienvenido!");
+        escritorio.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 440, -1));
+
+        jLabel6.setFont(new java.awt.Font("Messina Sans", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Sistema de Colegio");
+        escritorio.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 440, -1));
+
+        jLabel7.setFont(new java.awt.Font("Messina Sans", 3, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("2024©");
+        escritorio.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 260, 70, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/13223142_5191466.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        escritorio.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 290));
 
         menu_formulario.setText("Alumno");
 
@@ -124,7 +160,7 @@ public static HashSet<Materia> materia = new HashSet<>();
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio)
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
         );
 
         pack();
@@ -211,6 +247,13 @@ public static HashSet<Materia> materia = new HashSet<>();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane escritorio;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
